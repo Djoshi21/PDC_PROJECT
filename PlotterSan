@@ -1,0 +1,6 @@
+MyData<-read.csv(file="/home/hadoop1/Desktop/Data/Output/SanitizedUP.csv",header=TRUE,sep=",",row.names=NULL)
+MyDatae<-read.csv(file="/home/hadoop1/Desktop/Data/Output/UnsanitizedUP.csv",header=TRUE,sep=",",row.names=NULL)
+Unsanitized<-MyData[2]
+Sanitized<-MyDatae[2]
+matplot(Unsanitized,xlab="Grampanchayat",ylab="Difference",col="red")
+matplot(Sanitized,xlab="Grampanchayat",ylab="Difference",col="green")
